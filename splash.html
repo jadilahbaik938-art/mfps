@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MFPS — Splash</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: linear-gradient(160deg, #003366 0%, #001a3a 60%, #8B0000 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .logo-container img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      /* TANPA background putih / blur */
+      filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
+    }
+
+    .app-title {
+      margin-top: 24px;
+      font-size: 3rem;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 6px;
+    }
+
+    .app-subtitle {
+      font-size: 0.95rem;
+      color: #a8c4e0;
+      letter-spacing: 2px;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    .company-name {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: #6fa8d6;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #c0392b, #e74c3c);
+      margin: 14px auto;
+      border-radius: 2px;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      color: #aaa;
+      margin-top: 6px;
+      letter-spacing: 1px;
+    }
+
+    .enter-btn {
+      margin-top: 48px;
+      padding: 14px 48px;
+      background: linear-gradient(90deg, #c0392b, #e74c3c);
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 8px 24px rgba(192,57,43,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .enter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(192,57,43,0.7);
+    }
+
+    .version-tag {
+      position: fixed;
+      bottom: 20px;
+      font-size: 0.7rem;
+      color: #4a6080;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <!-- Ganti src dengan path logo LegaLity Anda -->
+    <img src="assets/logo-legality.png" alt="LEGALITY Logo" />
+
+    <div class="app-title">MFPS</div>
+    <div class="divider"></div>
+    <div class="app-subtitle">Material Flow Protection System</div>
+    <div class="company-name">PT. Pertamina Patra Niaga — Refinery Unit Balikpapan</div>
+    <div class="badge">Security HSSE · Ref. TK0 B87-009/KPI4B548/2025-59</div>
+
+    <a href="login.html" class="enter-btn">MASUK →</a>
+  </div>
+
+  <div class="version-tag">v2.5 · System Online</div>
+
+</body>
+</html>
